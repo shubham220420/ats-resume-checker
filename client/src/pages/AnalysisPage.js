@@ -35,7 +35,7 @@ const AnalysisPage = () => {
       formData.append('resume', file);
 
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/upload`,
+        `${process.env.REACT_APP_API_URL || 'https://ats-resume-checker-grtw.onrender.com'}/api/upload`,
         formData,
         {
           headers: {
@@ -85,7 +85,7 @@ const AnalysisPage = () => {
 
     try {
       const response = await axios.post(
-        `${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/analyze`,
+        `${process.env.REACT_APP_API_URL || 'https://ats-resume-checker-grtw.onrender.com'}/api/analyze`,
         {
           resumeText: resumeText.trim(),
           jobDescription: jobDescription.trim(),

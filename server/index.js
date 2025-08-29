@@ -31,7 +31,7 @@ app.use(compression());
 
 // CORS configuration
 const allowedOrigins = [
-  'https://ats-resume-checker-frontend.onrender.com', // Production frontend
+  'https://ats-resume-checker-ivory.vercel.app', // Production frontend
   'http://localhost:3000', // Development frontend
   'http://localhost:3001'  // Alternative development port
 ];
