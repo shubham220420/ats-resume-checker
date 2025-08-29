@@ -33,7 +33,8 @@ app.use(compression());
 const allowedOrigins = [
   'https://ats-resume-checker-ivory.vercel.app', // Production frontend
   'http://localhost:3000', // Development frontend
-  'http://localhost:3001'  // Alternative development port
+  'http://localhost:3001',  // Alternative development port
+  'https://ats-resume-checker-11moqnk1l-shubhams-projects-7c2c26d2.vercel.app'
 ];
 
 app.use(cors({
