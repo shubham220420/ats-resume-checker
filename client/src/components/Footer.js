@@ -14,7 +14,7 @@ const Footer = () => {
                 <FileText className="w-5 h-5 text-white" />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-gradient">ATS Resume Checker</h3>
+                <h3 className="text-lg font-bold text-gradient">ATSify</h3>
                  <p className="text-sm text-gray-500">Resume Analysis Developed by <strong> Shubham Rakheja </strong></p>
               </div>
             </Link>

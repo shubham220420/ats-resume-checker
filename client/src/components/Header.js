@@ -25,7 +25,7 @@ const Header = () => {
               <FileText className="w-5 h-5 text-white" />
             </motion.div>
             <div>
-              <h1 className="text-xl font-bold text-gradient">ATS Resume Checker</h1>
+              <h1 className="text-xl font-bold text-gradient">ATSify</h1>
               <p className="text-xs text-gray-500">AI-Powered Analysis</p>
             </div>
           </Link>
