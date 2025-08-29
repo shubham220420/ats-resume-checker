@@ -19,7 +19,7 @@
     "job-matching",
     "recruitment"
   ],
-  "author": "Your Name",
+  "author": "Shubham Rakheja",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^8.2.2"
