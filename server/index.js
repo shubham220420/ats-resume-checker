@@ -16,7 +16,12 @@ const app = express();
 const PORT = 10000;
 
 // Security middleware
+// Trust Render / Vercel proxies
+app.set('trust proxy', 1);  // 1 = trust first proxy
 app.use(helmet());
+
+
+
 
 // Rate limiting
 const limiter = rateLimit({
