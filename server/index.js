@@ -31,16 +31,17 @@ app.use(compression());
 
 // CORS configuration
 const allowedOrigins = [
-  'https://ats-resume-checker-iota.vercel.app', // Production frontend
+  'https://ats-resume-checker-iota.vercel.app',// Production frontend
   'http://localhost:3000', // Development frontend
   'http://localhost:3001',  // Alternative development port
-  'https://ats-resume-checker-11moqnk1l-shubhams-projects-7c2c26d2.vercel.app'
+  'https://ats-resume-checker-shubhams-projects-7c2c26d2.vercel.app',
+ 
 ];
 
 app.use(cors({
   origin: function (origin, callback) {
     // Allow requests with no origin (like mobile apps or curl requests)
-    if (!origin) return callback(null, true);
+    if (!origin || allowedOrigins.includes(origin)) return callback(null, true);
     
     if (allowedOrigins.indexOf(origin) !== -1) {
       callback(null, true);
